@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- JS File -->
+    <script src="app.js" async></script>
+
+    <title>Chatbot</title>
+</head>
+
+<body class="body">
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <p class="material-symbols-outlined close-icon chatbot-close-icon">close</p>
+        </header>
+        <div class="chat-container" id="chat-container">
+            <ul class="chatbox" id="chatbox">
+                <div id="botStarterMessage" class="botText">
+                    <div class="d-flex incoming-msg">
+                        <!-- <img src="https://cdn.adraproductstudio.com/essence-logo.png" class="essence-img"> -->
+                        <!-- <p class="botText">
+                        <span>Hello from EssenceAI!<br><br>
+                        <span id="bot-welcome-message"></span>
+                        <i class="incoming-timeFontSize"></i>
+                        </span>
+                    </p> -->
+                    </div>
+                </div>
+                <!-- <li class="chat incoming">
+                <span class="material-symbols-outlined smart-toy">smart_toy</span>
+                <p>Hi there 👋 <br>How can I help you today?</p>
+            </li> -->
+                <!-- <li class="chat outgoing">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </li> -->
+                <div id="bottom-chat"></div>
+             
+            </ul>
+            
+        </div>
+
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." class="userInputText" id="userInputText" required></textarea>
+            <span id="send-btn" class="material-symbols-outlined" onclick="handleSendClick()">send</span>
+
+
+        </div>
+    </div>
+
+    <!-- Chatbot toggler -->
+    <div class="chatbot-toggler">
+        <p class="material-symbols-outlined message-icon">mode_comment</p>
+        <p class="material-symbols-outlined close-icon">close</p>
+    </div>
+
+
+
+
+</body>
+
+</html>
